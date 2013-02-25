@@ -2,21 +2,22 @@ define([
   'lib/requires/req_jquery',
   'lib/requires/req_hammer'
   'lib/requires/req_processing'
-  'current/sketch'
+  'sketch'
   ], ($, Hammer, Processing, Sketch) ->
 
   canvas = document.getElementById "main-canvas"
   hammer = new Hammer(canvas)
   sketch_obj = new Sketch()
+
+  # TODO
+  # load images to image cache
+
   #sketch = new Processing.Sketch(sketch_obj.sketch)
   sketch = sketch_obj.sketch
 
-  # load images to image cache
-#  sketch.imageCache.add(image) for image in sketch_obj.images
+  #sketch.imageCache.add(image) for image in sketch_obj.images
 
   processing = new Processing(canvas, sketch)
-
-  debugger
 
   hammer.ondragstart = processing.touchdragstart || undefined
   hammer.ondrag = processing.touchdrag || undefined

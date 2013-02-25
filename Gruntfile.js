@@ -23,7 +23,7 @@ module.exports = function (grunt) {
 
         regarde: {
           fred: {
-            files: ['app/*.*', './app/current/*.coffee'],
+            files: ['app/*.*', 'projects/current/*.coffee'],
             tasks: ['coffee', 'livereload']
           }
         },
@@ -32,7 +32,7 @@ module.exports = function (grunt) {
           compile: {
             files: {
               'dist/main.js': 'app/main.coffee',
-              'dist/current/sketch.js': 'app/current/sketch.coffee',
+              'dist/sketch.js': 'projects/current/sketch.coffee',
 
               'app/lib/requires/req_jquery.js': 'app/lib/requires/req_jquery.coffee',
               'app/lib/requires/req_processing.js': 'app/lib/requires/req_processing.coffee',
