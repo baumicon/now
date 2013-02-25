@@ -33,10 +33,6 @@ module.exports = function (grunt) {
             files: {
               'dist/main.js': 'app/main.coffee',
               'dist/sketch.js': 'projects/current/sketch.coffee',
-
-              'dist/lib/requires/req_jquery.js': 'dist/lib/requires/req_jquery.coffee',
-              'dist/lib/requires/req_processing.js': 'dist/lib/requires/req_processing.coffee',
-              'dist/lib/requires/req_hammer.js': 'dist/lib/requires/req_hammer.coffee'
             }
           }
         }

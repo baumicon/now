@@ -1,6 +1,22 @@
 (function() {
 
-  define(['lib/requires/req_jquery', 'lib/requires/req_hammer', 'lib/requires/req_processing', 'sketch'], function($, Hammer, Processing, Sketch) {
+  require.config({
+    paths: {
+      'jquery': 'lib/jquery-1.9.1',
+      'hammer': 'lib/hammer',
+      'processing': 'lib/processing-1.4.1'
+    },
+    shim: {
+      hammer: {
+        exports: 'Hammer'
+      },
+      processing: {
+        exports: 'Processing'
+      }
+    }
+  });
+
+  define(['jquery', 'hammer', 'processing', 'sketch'], function($, Hammer, Processing, Sketch) {
     var canvas, hammer, processing, sketch, sketch_obj;
     canvas = document.getElementById("main-canvas");
     hammer = new Hammer(canvas);

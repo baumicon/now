@@ -1,7 +1,23 @@
+require.config({
+  paths: {
+    'jquery': 'lib/jquery-1.9.1',
+    'hammer': 'lib/hammer',
+    'processing': 'lib/processing-1.4.1'
+  },
+  shim: {
+    hammer: {
+      exports: 'Hammer'
+    },
+    processing: {
+      exports: 'Processing'
+    }
+  }
+})
+
 define([
-  'lib/requires/req_jquery',
-  'lib/requires/req_hammer'
-  'lib/requires/req_processing'
+  'jquery',
+  'hammer'
+  'processing'
   'sketch'
   ], ($, Hammer, Processing, Sketch) ->
 
