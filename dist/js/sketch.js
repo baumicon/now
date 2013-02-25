@@ -24,7 +24,7 @@
           return p.fill(0);
         };
         p.draw = function() {
-          p.background(225);
+          p.background(235);
           p.pushMatrix();
           p.translate(_this.c.x1 + (_this.c.w / 2), _this.c.y1 + (_this.c.h / 2));
           p.rotate(_this.c.rot);
