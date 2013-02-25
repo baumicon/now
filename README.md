@@ -1,3 +1,7 @@
+Now!
+----
+CoffeeScript + Processing.js + Hammer.js + grunt-livereload
+
 Getting started
 ---------------
 1. npm install
