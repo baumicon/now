@@ -34,9 +34,9 @@ module.exports = function (grunt) {
               'dist/main.js': 'app/main.coffee',
               'dist/sketch.js': 'projects/current/sketch.coffee',
 
-              'app/lib/requires/req_jquery.js': 'app/lib/requires/req_jquery.coffee',
-              'app/lib/requires/req_processing.js': 'app/lib/requires/req_processing.coffee',
-              'app/lib/requires/req_hammer.js': 'app/lib/requires/req_hammer.coffee'
+              'dist/lib/requires/req_jquery.js': 'dist/lib/requires/req_jquery.coffee',
+              'dist/lib/requires/req_processing.js': 'dist/lib/requires/req_processing.coffee',
+              'dist/lib/requires/req_hammer.js': 'dist/lib/requires/req_hammer.coffee'
             }
           }
         }
