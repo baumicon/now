@@ -1,8 +1,8 @@
 require.config({
   paths: {
-    'jquery': '../lib/jquery-1.9.1',
-    'hammer': '../lib/hammer',
-    'processing': '../lib/processing-1.4.1'
+    'jquery': '../components/jquery/jquery',
+    'hammer': '../components/hammer/hammer',
+    'processing': '../components/processing/processing'
   },
   shim: {
     hammer: {

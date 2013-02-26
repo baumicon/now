@@ -5,7 +5,7 @@ define [], () ->
         p.size(1000, 650)
 
         @c = {
-          x1: 100,
+          x1: 200,
           y1: 100,
           w: 100,
           h: 100,
@@ -15,7 +15,7 @@ define [], () ->
         p.fill(0)
 
       p.draw = () =>
-        p.background(235)
+        p.background(225)
         p.pushMatrix()
         p.translate(@c.x1+(@c.w/2), @c.y1+(@c.h/2))
         p.rotate(@c.rot)

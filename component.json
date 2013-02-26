@@ -1,0 +1,13 @@
+{
+  "author": "Teemu Kallio",
+  "name": "Now!",
+  "version": "0.0.1",
+
+  "dependencies": {
+      "requirejs": "*",
+      "jquery": "*",
+      "processing": "*",
+      "hammer": "*"
+  },
+  "devDependencies": {}
+}

@@ -7,7 +7,6 @@
 
       function Sketch() {
         this.sketch = __bind(this.sketch, this);
-
       }
 
       Sketch.prototype.sketch = function(p) {
@@ -15,7 +14,7 @@
         p.setup = function() {
           p.size(1000, 650);
           _this.c = {
-            x1: 100,
+            x1: 200,
             y1: 100,
             w: 100,
             h: 100,
@@ -24,7 +23,7 @@
           return p.fill(0);
         };
         p.draw = function() {
-          p.background(235);
+          p.background(225);
           p.pushMatrix();
           p.translate(_this.c.x1 + (_this.c.w / 2), _this.c.y1 + (_this.c.h / 2));
           p.rotate(_this.c.rot);
